@@ -1,0 +1,152 @@
+<html>
+    <head>
+    
+<title>    
+    
+</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+    <div class="background">
+        <div class ="nav">
+            <a class="a active" href="#">HOME</a>
+            <a class="b" href="#">ABOUT ME</a>
+            <a class="c" href="#">GALLERY</a>
+            <a class="d" href="#">CONTACT US</a>
+        </div>
+          <div class="content">
+              
+              <div class="home">
+                  <h1> ALLU ARJUN</h1>
+                  <h3> Indian Actor</h3>
+              </div>
+              
+              <div class="aboutus">
+                  <p>
+
+Allu Arjun is an Indian film actor who primarily works in Telugu cinema. After playing as a child artist in Vijetha and as a dancer in Daddy, Arjun made his adult debut in Gangotri.<br></p>
+                  <p>Arjun then appeared in Sukumar's debut film Arya. His role in Arya was his breakthrough, earning him his first Filmfare Best Telugu Actor Award nomination and he won a Special Jury award at the Nandi Awards ceremony, two CineMAA Awards for Best Actor and Best Actor Jury and the film was a critical and commercial success.<br></p>
+                 <p> He next starred in V. V. Vinayak's Bunny playing the role of Bunny, a college student. Critics praised his mannerisms and dancing. His next film was A. Karunakaran's musical love story Happy. He then starred in Puri Jagannadh's action film Desamuduru, in which he played the role of Bala Govindam, a fearless journalist who falls for a woman with a darker past.He is one of the most sought actors in Telugu Cinema. He won five Filmfare Awards South and two Nandi Awards till date.</p>
+                </div>
+             
+              <div class ="gallery">
+                  <div class="image">
+                  <img src="image1.jpg">
+                  </div>
+                   <div class="image">
+                  <img src="hd.jpg">
+                  </div>
+                   <div class="image">
+                  <img src="image3.jpg">
+                  </div>
+                   <div class="image">
+                  <img src="image4.jpg">
+                  </div>
+                   <div class="image">
+                  <img src="image5.jpg">
+                  </div>
+                  <div class="image">
+                  <img src="image2.jpg">
+                  </div>
+                  <div class="image">
+                  <img src="122.jpg">
+                  </div>
+
+                  
+              
+              
+              </div>
+                  
+        
+        <div class="contactus">
+            <div class="contact form">
+                <form action="index.html" method="post">
+                <input type="text" name="" class="inputtext" value="Name">
+                     <input type="text" name="" class="inputtext" value="Last Name">
+                     <input type="text" name="" class="inputtext" value="Your Email">
+                    <textarea cols="4" rows="6" class="inputmessage">Your Message...!!!</textarea>
+                    <input type="button" name="" class="submitbutton" value="submit">
+                </form>
+            
+            </div>
+              
+              
+              </div>
+        
+          </div>
+        
+        
+        
+        </div>
+      <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+        <script type="text/javascript">
+          
+            $(document).ready (function(){
+                $('a').click(function(){
+                   //alert("it is already clicked");
+                    var selected = $(this);
+                    $('a').removeClass('active');
+                    $(selected).addClass('active');
+                });
+                
+                var $a = $('.a'),
+                    $b = $('.b'),
+                    $c = $('.c'),
+                    $d = $('.d'),
+                    $home = $('.home'),
+                    $aboutus = $('.aboutus'),
+                    $gallery = $('.gallery'),
+                    $contactus = $('.contactus')
+                
+                $a.click (function(){
+                    $home.fadeIn();
+                    $gallery.fadeOut();
+                    $aboutus.fadeOut();
+                    $contactus.fadeOut();
+                });
+                
+                $b.click (function(){
+                    $aboutus.fadeIn();
+                    $home.fadeOut();
+                    $gallery.fadeOut();
+                    $contactus.fadeOut();
+                
+                });
+                
+                $c.click(function(){
+                    $gallery.fadeIn();
+                    $home.fadeOut();
+                    $aboutus.fadeOut();
+                    $contactus.fadeOut();
+                    
+                });
+                
+                $d.click(function(){
+                    $contactus.fadeIn();
+                    $home.fadeOut();
+                    $gallery.fadeOut();
+                    $aboutus.fadeOut();
+                    
+                    
+                });
+                    
+                
+            });
+        
+        </script>
+    </body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
